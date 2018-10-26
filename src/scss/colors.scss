@@ -1,0 +1,18 @@
+$bg-light-white: rgb(250,250,250); //light white background
+$bg-button: rgb(51,151,201);
+$bg-button-disabled: rgb(131,178,202);
+$color-gray: rgb(136,136,136); //text
+$color-light-gray:rgb(188,188,188); //disabled text
+$color-light-green: rgb(130,205,0);
+$color-light-blue: rgb(0,186,255);
+$color-yellow: rgb(255,228,2);
+$color-black: rgb(33,33,33);
+$color-black-lighter: rgb(68,68,68);
+
+.color-yellow{
+  color:$color-yellow;
+}
+
+.color-green{
+  color:$color-light-blue;
+}

@@ -1,0 +1,205 @@
+@font-face {
+  src: url("../fonts/ArvoBold.ttf") format("truetype");
+  font-family: 'Arvo-bold'; }
+
+@font-face {
+  src: url("../fonts/Avenir-Black.ttf") format("truetype");
+  font-family: 'Avenir-Black'; }
+
+@font-face {
+  src: url("../fonts/AvenirLTStd-Black.otf") format("opentype");
+  font-family: 'Avenir-LT-Black'; }
+
+@font-face {
+  src: url("../fonts/AvenirLTStd-Book.otf") format("opentype");
+  font-family: 'Avenir-LT-Book'; }
+
+@font-face {
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-family: 'Sans-Bold'; }
+
+@font-face {
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-family: 'Sans-Regular'; }
+
+.color-yellow {
+  color: #ffe402; }
+
+.color-green {
+  color: #00baff; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #212121; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0; }
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  display: inherit;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  position: relative;
+  padding: 0 15px; }
+
+.section__title, .section__text {
+  font-family: "Sans-Regular";
+  font-weight: normal;
+  text-align: center; }
+
+.section__text {
+  color: #888888; }
+
+.section__title {
+  font-size: 28px;
+  margin: 10px 0; }
+
+.plane__item {
+  padding: 30px;
+  margin: 20px 0;
+  background-color: #fafafa;
+  -webkit-box-shadow: inset 0 0 1px 0 #bcbcbc;
+          box-shadow: inset 0 0 1px 0 #bcbcbc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+
+.plane__text__part {
+  max-width: 40%;
+  width: 100%; }
+
+.plane__title {
+  font-family: "Arvo-bold";
+  margin: 0 0 20px;
+  font-weight: normal;
+  font-size: 22px; }
+
+.plane__pro {
+  color: #00baff; }
+
+.plane__enterprise {
+  color: #82cd00; }
+
+.plane__price {
+  font-family: "Avenir-LT-Black";
+  font-size: 24px;
+  margin-bottom: 30px;
+  display: block; }
+
+.plane__settings__title {
+  font-family: "Avenir-LT-Black";
+  font-weight: normal;
+  font-size: 16px;
+  padding-left: 25px;
+  margin: 10px 0; }
+
+.checkbox__label {
+  font-family: "Avenir-LT-Book";
+  color: #bcbcbc;
+  margin: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer; }
+
+input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.checkbox__image {
+  min-width: 15px;
+  min-height: 15px;
+  background: url("../images/check.png") no-repeat 50%/cover;
+  margin: 0 5px 2px 0;
+  width: 15px;
+  height: 15px; }
+
+.checkbox__label.checked {
+  color: #888888; }
+
+.checked .checkbox__image {
+  background: url("../images/checked.png") no-repeat 50%/cover; }
+
+.button__submit {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 40px 0 0;
+  font-family: "Sans-Bold";
+  background: #3397c9;
+  font-size: 14px;
+  color: white;
+  cursor: pointer; }
+  .button__submit:hover {
+    background: #5aacd5; }
+
+.button__submit.disabled {
+  opacity: .4;
+  background: #3397c9; }
+
+.plane__image__part {
+  max-width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-right: 50px; }
+
+.plane__item__best::before {
+  content: '';
+  position: absolute;
+  background: url("../images/gold.png") no-repeat;
+  right: -13px;
+  top: -11px;
+  width: 160px;
+  height: 160px; }
+
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  .section__title {
+    font-size: 24px; }
+  .section__text {
+    font-size: 14px; }
+  .plane__item {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse; }
+  .plane__text__part, .plane__image__part {
+    max-width: none;
+    margin-right: 0; }
+  .button__submit {
+    margin: 40px auto 0; }
+  .plane__image__part img {
+    width: 50%; } }
+
+/*# sourceMappingURL=style.bundle.css.map*/

@@ -1,0 +1,164 @@
+@import "./fonts";
+@import "./colors";
+
+body{
+  margin: 0;
+  padding: 0;
+  color:$color-black;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.container{
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  display: inherit;
+  flex-wrap: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  position: relative;
+  padding: 0 15px;
+}
+
+//=============SECTION MAIN PLANE TITLE
+.section__title, .section__text{
+    font-family: $font-headers;
+    font-weight: normal;
+    text-align: center;
+}
+
+.section__text{
+    color:$color-gray;
+  }
+
+.section__title{
+    font-size: 28px;
+  margin: 10px 0;
+  }
+
+//===============PLANE ITEM
+.plane__item{
+  padding: 30px;
+  margin: 20px 0;
+  background-color: $bg-light-white;
+  box-shadow: inset 0 0 1px 0 $color-light-gray;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+//===========TEXT PART
+.plane__text__part{
+  max-width: 40%;
+  width: 100%;
+}
+.plane__title{
+  font-family: $font-forTitle;
+  margin: 0 0 20px;
+  font-weight: normal;
+  font-size: 22px;
+}
+//===========PLANE NAME
+.plane__pro{
+  color: $color-light-blue;
+}
+.plane__enterprise{
+  color: $color-light-green;
+}
+//===========PLANE PRICE
+.plane__price{
+  font-family: $font-forSelect;
+  font-size: 24px;
+  margin-bottom: 30px;
+  display: block;
+}
+//===========SETTING TITLE
+.plane__settings__title{
+  font-family: $font-forSelect;
+  font-weight: normal;
+  font-size: 16px;
+  padding-left: 25px;
+  margin: 10px 0;
+}
+//============CHECKBOX
+.checkbox__label{
+  font-family: $font-forText;
+  color:$color-light-gray;
+  margin: 12px 0;
+  display: flex;
+  cursor: pointer;
+}
+input[type=checkbox]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+//=============CHECKBOX IMAGE
+.checkbox__image{
+  min-width: 15px;
+  min-height: 15px;
+  background: url("../images/check.png") no-repeat 50%/cover;
+  margin: 0 5px 2px 0;
+  width: 15px;
+  height: 15px;
+}
+.checkbox__label.checked{
+  color:$color-gray;
+}
+.checked{
+  .checkbox__image{
+    background: url("../images/checked.png") no-repeat 50%/cover;
+  }
+}
+//================BUTTON SUBMIT
+.button__submit{
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 40px 0 0;
+  font-family: $font-forButton;
+  background: $bg-button;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  &:hover{
+    background: lighten($bg-button, 10%);
+  }
+}
+.button__submit.disabled{
+  opacity: .4;
+  background: $bg-button;
+}
+//===========IMAGES PART
+.plane__image__part{
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-right: 50px;
+}
+//============BOW IMAGE
+.plane__item__best::before {
+  content: '';
+  position: absolute;
+  background: url('../images/gold.png') no-repeat;
+  right: -13px;
+  top: -11px;
+  width: 160px;
+  height: 160px;
+}
+
+//===============ADAPTIVE
+@import "./adaptive";

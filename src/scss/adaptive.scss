@@ -1,0 +1,21 @@
+@media screen and (min-width: 320px) and (max-width: 650px){
+  .section__title{
+    font-size: 24px;
+  }
+  .section__text{
+    font-size: 14px;
+  }
+  .plane__item{
+    flex-wrap: wrap-reverse;
+  }
+  .plane__text__part, .plane__image__part{
+    max-width: none;
+    margin-right: 0
+  }
+  .button__submit{
+    margin: 40px auto 0;
+  }
+  .plane__image__part img{
+    width: 50%;
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  src: url('../fonts/ArvoBold.ttf') format("truetype");
+  font-family: 'Arvo-bold';
+}
+
+@font-face {
+  src: url('../fonts/Avenir-Black.ttf') format("truetype");
+  font-family: 'Avenir-Black';
+}
+
+@font-face {
+  src: url('../fonts/AvenirLTStd-Black.otf') format('opentype');
+  font-family: 'Avenir-LT-Black';
+}
+
+@font-face {
+  src: url('../fonts/AvenirLTStd-Book.otf') format('opentype');
+  font-family: 'Avenir-LT-Book';
+}
+
+@font-face {
+  src: url('../fonts/OpenSans-Bold.ttf') format("truetype");
+  font-family: 'Sans-Bold';
+}
+
+@font-face {
+  src: url('../fonts/OpenSans-Regular.ttf') format("truetype");
+  font-family: 'Sans-Regular';
+}
+
+//===========FONTS VARS
+$font-headers: 'Sans-Regular';
+$font-forTitle: 'Arvo-bold';
+$font-forSelect: 'Avenir-LT-Black';
+$font-forText: 'Avenir-LT-Book';
+$font-forButton: 'Sans-Bold';
+$font-forIcons: 'Avenir-Black';
+
